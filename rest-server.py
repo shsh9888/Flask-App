@@ -10,7 +10,7 @@ from cassandra.cluster import Cluster
 # Initialize the Flask application
 app = Flask(__name__)
 
-cluster = Cluster(['localhost'],port=9042)
+cluster = Cluster(['cassandra'],port=9042)
 session = cluster.connect('iot')
 BYMIN="minutetelemetry"
 BYHOUR="hourlytelemetry"
