@@ -12,7 +12,7 @@ app = Flask(__name__)
 
 cluster = Cluster(['cassandra'],port=9042)
 session = cluster.connect('iot')
-BYMIN="minutetelemetry"
+BYMIN="minutelytelemetry"
 BYHOUR="hourlytelemetry"
 BYDAY="dailytelemetry"
 
